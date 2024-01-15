@@ -1,0 +1,9 @@
+services:
+  web-server: #Nombre de aplicacion
+    build:
+      context: .
+      dockerfile: dockerfile
+    volumes: #Enlace de archivos
+      - .:/app
+    ports: #Enlace de puertos
+      - '80:80'
